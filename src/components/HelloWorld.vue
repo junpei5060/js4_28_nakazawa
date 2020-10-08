@@ -51,7 +51,7 @@ export default ({
       // console.log(this.$refs.canvas)
       let context = this.canvas.getContext("2d").drawImage(this.video, 0, 0, 400, 240)
       this.captures.push(this.canvas.toDataURL("image/png")) //撮った画像をcaptures配列に格納する
-      let subscriptionKey = "951ca53d72ea41ac82f9697c50456994";
+      let subscriptionKey = "";
       let uriBase = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect";
       let params = {
         "returnFaceId": "true",
